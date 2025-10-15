@@ -1,1 +1,93 @@
-      
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Phanstop Aviation Ltd</title>
+  <meta name="description" content="Phanstop Aviation Ltd — aviation consultancy specialising in sustainability, safety, training and airline operations.">
+  <style>
+    /* --- Include your original CSS here --- */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3050/3050147.png" alt="Sustainability aviation logo">
+      Phanstop Aviation Ltd
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="service-sustainability.html">Sustainability</a>
+      <a href="service-safety.html">Safety</a>
+      <a href="service-training.html">Training</a>
+      <a href="service-operations.html">Operations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Guiding Operators to Safer, Cleaner Flight</h2>
+    <p>Phanstop Aviation Ltd provides professional consultancy in sustainability, safety, training, and airline operations — helping aviation businesses grow responsibly and safely.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="service">
+        <h3>🌱 Sustainability Solutions</h3>
+        <p>Helping aviation companies adopt sustainable aviation fuels (SAF) and reduce their carbon footprint.</p>
+        <a href="service-sustainability.html">Learn More →</a>
+      </div>
+      <div class="service">
+        <h3>🛫 Safety</h3>
+        <p>Implementing safety management systems, audits, and compliance with international aviation standards.</p>
+        <a href="service-safety.html">Learn More →</a>
+      </div>
+      <div class="service">
+        <h3>🎓 Training</h3>
+        <p>Providing expert-led aviation training programs to build knowledge and operational confidence.</p>
+        <a href="service-training.html">Learn More →</a>
+      </div>
+      <div class="service">
+        <h3>✈️ Airline Operations</h3>
+        <p>Optimizing flight operations, crew management, and cost control strategies for efficiency.</p>
+        <a href="service-operations.html">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <input type="text" name="phone" placeholder="Your phone number (optional)">
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; color:#333;">📞 07477 199779 &nbsp; | &nbsp; ✉️ <a href="mailto:Phanstop0@gmail.com">Phanstop0@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Phanstop Aviation Ltd — All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const phone = this.phone.value.trim();
+      const message = this.message.value.trim();
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields before sending.');
+        return;
+      }
+      const subject = encodeURIComponent('Website Enquiry from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\n' + message);
+      window.location.href = 'mailto:Phanstop0@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
+    
