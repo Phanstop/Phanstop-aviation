@@ -1,75 +1,181 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Phanstop Aviation Ltd — Sustainability Solutions</title>
-<style>
-body { font-family:'Segoe UI', Arial, sans-serif; margin:0; background:#f9fafb; color:#1e293b; }
-header { background:white; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-header img.logo { width:55px; height:55px; }
-nav a { margin-left:25px; text-decoration:none; color:#0b67b2; font-weight:bold; transition:0.2s; }
-nav a:hover { color:#27ae60; text-decoration:underline; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sustainability Solutions | Phanstop Aviation Ltd</title>
+  <meta name="description" content="Phanstop Aviation Ltd — helping the aviation industry achieve sustainability through SAF and carbon reduction.">
+  <style>
+    :root {
+      --blue: #0b67b2;
+      --green: #27ae60;
+      --muted: #6b7280;
+    }
 
-.hero { text-align:center; padding:80px 20px; background:linear-gradient(to bottom right, rgba(11,103,178,0.8), rgba(39,174,96,0.8)), url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1600&q=80'); background-size:cover; background-position:center; color:white; }
-.hero h2 { font-size:36px; margin-bottom:15px; }
-.hero p { font-size:18px; max-width:700px; margin:0 auto; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f9fafb;
+      color: #1e293b;
+      line-height: 1.6;
+    }
 
-.content { max-width:1000px; margin:40px auto; padding:0 20px; }
-.section { margin-bottom:50px; background:white; border-radius:12px; padding:25px; box-shadow:0 4px 14px rgba(0,0,0,0.08); }
-.section h3 { color:#27ae60; font-size:28px; margin-top:0; }
-.section img { width:100%; max-width:600px; border-radius:12px; margin-top:15px; }
+    header {
+      background: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-footer { text-align:center; padding:20px; background:#0b67b2; color:white; font-size:15px; }
-</style>
+    header h1 {
+      font-size: 22px;
+      color: var(--blue);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header img.logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--blue);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, rgba(11,103,178,0.8), rgba(39,174,96,0.8)),
+        url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #e2e8f0;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .content h3 {
+      color: var(--green);
+      font-size: 26px;
+      margin-top: 40px;
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 25px 0;
+    }
+
+    .back-home {
+      display: block;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .back-home a {
+      background: var(--blue);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-home a:hover {
+      background: var(--green);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b67b2;
+      color: white;
+      font-size: 15px;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>
+      <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3448/3448339.png" alt="Aviation logo">
+      Phanstop Aviation Ltd
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>
-    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3050/3050147.png" alt="Logo">
-    Phanstop Aviation Ltd
-  </h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="service-sustainability.html">Sustainability</a>
-    <a href="service-safety.html">Safety</a>
-    <a href="service-training.html">Training</a>
-    <a href="service-operations.html">Operations</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h2>Sustainability Solutions</h2>
+    <p>Driving the future of cleaner aviation through sustainable fuels and carbon-conscious innovation.</p>
+  </section>
 
-<section class="hero">
-  <h2>🌱 Sustainability Solutions</h2>
-  <p>Helping aviation companies adopt sustainable aviation fuels and reduce their carbon footprint.</p>
-</section>
+  <div class="content">
+    <h3>🌍 Leading the Shift to Greener Aviation</h3>
+    <p>At Phanstop Aviation Ltd, we believe sustainability is the runway to the future of flight. Our goal is to help airlines and operators transition toward low-emission aviation by integrating Sustainable Aviation Fuels (SAF) and adopting eco-efficient operational strategies.</p>
 
-<div class="content">
+    <img src="https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&w=1200&q=80" alt="Sustainable aviation fuels">
 
-  <div class="section">
-    <h3>Adopting Sustainable Aviation Fuels (SAF)</h3>
-    <p>We guide airlines in transitioning to SAF, which reduces carbon emissions significantly while maintaining operational efficiency.</p>
-    <img src="https://images.unsplash.com/photo-1605139938328-3b0f13677b0f?auto=format&fit=crop&w=800&q=80" alt="Sustainable Aviation Fuel">
+    <h3>⚙️ What We Do</h3>
+    <ul>
+      <li>Develop sustainability roadmaps aligned with global carbon reduction targets (CORSIA, ICAO).</li>
+      <li>Guide airlines in sourcing and implementing SAF alternatives.</li>
+      <li>Optimize flight operations to minimize fuel burn and emissions.</li>
+      <li>Assist in environmental reporting, certification, and compliance.</li>
+      <li>Advise on carbon offset programs and green investment initiatives.</li>
+    </ul>
+
+    <img src="https://images.unsplash.com/photo-1534278931827-8a259344abe7?auto=format&fit=crop&w=1200&q=80" alt="Sustainable flight operations">
+
+    <h3>🚀 Why Choose Us?</h3>
+    <p>We bring a blend of engineering, operational, and environmental expertise to the table. Our consultants have hands-on experience in airline sustainability planning, aviation fuel systems, and emission-reduction technologies — making us your trusted partner in sustainable growth.</p>
+
+    <h3>🌱 The Future Takes Flight</h3>
+    <p>Every small step counts toward a cleaner sky. Together, we can redefine aviation as a force for good — connecting the world while protecting it for future generations.</p>
+
+    <div class="back-home">
+      <a href="index.html">← Back to Home</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h3>Carbon Footprint Reduction Strategies</h3>
-    <p>Our consultancy provides actionable strategies to minimize environmental impact across operations, including fuel optimization, route planning, and green technologies.</p>
-    <img src="https://images.unsplash.com/photo-1581093588401-79a8f12e9144?auto=format&fit=crop&w=800&q=80" alt="Carbon Reduction">
-  </div>
-
-  <div class="section">
-    <h3>Innovative Environmental Solutions</h3>
-    <p>We help aviation businesses implement new technologies and best practices to meet regulatory standards and future-proof their operations.</p>
-    <img src="https://images.unsplash.com/photo-1598300050439-62ab9406d3e7?auto=format&fit=crop&w=800&q=80" alt="Green Aviation">
-  </div>
-
-</div>
-
-<footer>
-  <p>© 2025 Phanstop Aviation Ltd — All Rights Reserved</p>
-</footer>
-
+  <footer>
+    <p>© 2025 Phanstop Aviation Ltd — All Rights Reserved</p>
+  </footer>
 </body>
 </html>
