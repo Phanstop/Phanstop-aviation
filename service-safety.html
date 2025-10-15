@@ -1,75 +1,185 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Phanstop Aviation Ltd — Safety</title>
-<style>
-body { font-family:'Segoe UI', Arial, sans-serif; margin:0; background:#f9fafb; color:#1e293b; }
-header { background:white; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-header img.logo { width:55px; height:55px; }
-nav a { margin-left:25px; text-decoration:none; color:#0b67b2; font-weight:bold; transition:0.2s; }
-nav a:hover { color:#27ae60; text-decoration:underline; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Safety Management | Phanstop Aviation Ltd</title>
+  <meta name="description" content="Phanstop Aviation Ltd — ensuring aviation safety through audits, compliance systems, and operational excellence.">
+  <style>
+    :root {
+      --blue: #0b67b2;
+      --green: #27ae60;
+      --muted: #6b7280;
+    }
 
-.hero { text-align:center; padding:80px 20px; background:linear-gradient(to bottom right, rgba(11,103,178,0.8), rgba(39,174,96,0.8)), url('https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1600&q=80'); background-size:cover; background-position:center; color:white; }
-.hero h2 { font-size:36px; margin-bottom:15px; }
-.hero p { font-size:18px; max-width:700px; margin:0 auto; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f9fafb;
+      color: #1e293b;
+      line-height: 1.6;
+    }
 
-.content { max-width:1000px; margin:40px auto; padding:0 20px; }
-.section { margin-bottom:50px; background:white; border-radius:12px; padding:25px; box-shadow:0 4px 14px rgba(0,0,0,0.08); }
-.section h3 { color:#27ae60; font-size:28px; margin-top:0; }
-.section img { width:100%; max-width:600px; border-radius:12px; margin-top:15px; }
+    header {
+      background: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-footer { text-align:center; padding:20px; background:#0b67b2; color:white; font-size:15px; }
-</style>
+    header h1 {
+      font-size: 22px;
+      color: var(--blue);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header img.logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--blue);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, rgba(11,103,178,0.8), rgba(39,174,96,0.8)),
+        url('https://images.unsplash.com/photo-1558981033-0dbf42fb3c0c?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #e2e8f0;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .content h3 {
+      color: var(--green);
+      font-size: 26px;
+      margin-top: 40px;
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 25px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .back-home {
+      display: block;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .back-home a {
+      background: var(--blue);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-home a:hover {
+      background: var(--green);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b67b2;
+      color: white;
+      font-size: 15px;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>
+      <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3448/3448339.png" alt="Aviation logo">
+      Phanstop Aviation Ltd
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>
-    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3050/3050147.png" alt="Logo">
-    Phanstop Aviation Ltd
-  </h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="service-sustainability.html">Sustainability</a>
-    <a href="service-safety.html">Safety</a>
-    <a href="service-training.html">Training</a>
-    <a href="service-operations.html">Operations</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h2>Safety Management & Compliance</h2>
+    <p>Building a culture of safety and trust through global aviation standards and operational excellence.</p>
+  </section>
 
-<section class="hero">
-  <h2>🛫 Safety Solutions</h2>
-  <p>Enhancing operational safety and compliance for aviation businesses.</p>
-</section>
+  <div class="content">
+    <h3>🛫 Putting Safety First</h3>
+    <p>Safety is the foundation of aviation — and at Phanstop Aviation Ltd, it’s at the heart of everything we do. Our consultants provide expert guidance to help airlines, maintenance organizations, and operators meet international safety standards and maintain flawless operational integrity.</p>
 
-<div class="content">
+    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80" alt="Aviation safety systems">
 
-  <div class="section">
-    <h3>Safety Management Systems (SMS)</h3>
-    <p>We design and implement SMS tailored to your operations, ensuring compliance with international aviation standards.</p>
-    <img src="https://images.unsplash.com/photo-1581091012184-3f32a376ffed?auto=format&fit=crop&w=800&q=80" alt="Safety Management">
+    <h3>🔧 Our Safety Services Include</h3>
+    <ul>
+      <li>Design and implementation of Safety Management Systems (SMS) compliant with ICAO Annex 19 and EASA Part-ORO.</li>
+      <li>Internal and external safety audits and risk assessments.</li>
+      <li>Accident and incident investigation support and training.</li>
+      <li>Development of Emergency Response Plans (ERP) and safety reporting tools.</li>
+      <li>Regulatory compliance consulting with CAA, EASA, and FAA standards.</li>
+    </ul>
+
+    <img src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?auto=format&fit=crop&w=1200&q=80" alt="Flight safety compliance">
+
+    <h3>🧭 Why Safety Matters</h3>
+    <p>With aviation’s increasing complexity, maintaining safety isn’t just about meeting requirements — it’s about building resilience. Our team helps organizations develop proactive safety cultures where risks are identified, communicated, and mitigated long before they become incidents.</p>
+
+    <h3>🌍 Global Standards, Local Expertise</h3>
+    <p>Phanstop Aviation Ltd combines a deep understanding of international aviation regulations with practical on-the-ground experience. Whether your operation is small or large, we’ll ensure your safety systems meet the highest standards while remaining cost-effective and adaptable.</p>
+
+    <div class="back-home">
+      <a href="index.html">← Back to Home</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h3>Audits and Compliance</h3>
-    <p>We perform audits to identify risks and help your airline maintain full regulatory compliance.</p>
-    <img src="https://images.unsplash.com/photo-1573497168851-62e5b3b90c80?auto=format&fit=crop&w=800&q=80" alt="Compliance Audit">
-  </div>
-
-  <div class="section">
-    <h3>Operational Risk Mitigation</h3>
-    <p>Our strategies reduce operational risks and enhance safety culture throughout your organization.</p>
-    <img src="https://images.unsplash.com/photo-1603482306360-c2eb877b3f95?auto=format&fit=crop&w=800&q=80" alt="Risk Mitigation">
-  </div>
-
-</div>
-
-<footer>
-  <p>© 2025 Phanstop Aviation Ltd — All Rights Reserved</p>
-</footer>
-
+  <footer>
+    <p>© 2025 Phanstop Aviation Ltd — All Rights Reserved</p>
+  </footer>
 </body>
 </html>
