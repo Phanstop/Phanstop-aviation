@@ -4,14 +4,167 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Phanstop Aviation Ltd — Airline Operations</title>
+  <meta name="description" content="Phanstop Aviation Ltd — Airline operations consultancy improving efficiency, reliability, and safety through modern operational strategies.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3448/3448339.png" type="image/png">
   <style>
-    /* --- Include your original CSS here --- */
+    :root {
+      --blue: #0b67b2;
+      --green: #27ae60;
+      --muted: #6b7280;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #1e293b;
+    }
+
+    header {
+      background: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: var(--blue);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header img.logo {
+      width: 45px;
+      height: 45px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: var(--blue);
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--green);
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, rgba(11,103,178,0.9), rgba(39,174,96,0.9)),
+        url('https://images.unsplash.com/photo-1473181488821-2d23949a045a?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #e2e8f0;
+    }
+
+    .services {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 32px;
+      color: var(--blue);
+      margin-bottom: 20px;
+    }
+
+    .services p {
+      font-size: 18px;
+      color: #374151;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .services img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 25px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      background: var(--blue);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background: var(--green);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b67b2;
+      color: white;
+      font-size: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 5px 10px 0 0;
+      }
+
+      .hero {
+        padding: 80px 15px;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+
+      .services p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>
-      <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3050/3050147.png" alt="Sustainability aviation logo">
+      <img class="logo" src="https://cdn-icons-png.flaticon.com/512/3050/3050147.png" alt="Aviation logo">
       Phanstop Aviation Ltd
     </h1>
     <nav>
@@ -24,9 +177,28 @@
     </nav>
   </header>
 
-  <section class="services">
+  <section class="hero">
     <h2>✈️ Airline Operations</h2>
-    <p>We optimize flight operations, crew management, and cost control strategies to improve efficiency and reliability. Our consultancy ensures that airline operations run smoothly while meeting safety and regulatory standards.</p>
+    <p>Enhancing efficiency, safety, and sustainability in every phase of flight operations.</p>
+  </section>
+
+  <section class="services">
+    <p>At <strong>Phanstop Aviation Ltd</strong>, we specialize in improving airline operational performance through data-driven strategies, process optimization, and regulatory compliance. Our consultants bring extensive airline experience to help operators streamline their workflow while maintaining the highest standards of safety and sustainability.</p>
+
+    <img src="https://images.unsplash.com/photo-1519638399535-1b036603ac77?auto=format&fit=crop&w=1200&q=80" alt="Airline Operations">
+
+    <p>We assist clients with:</p>
+    <ul style="text-align:left; font-size:18px; color:#374151; line-height:1.6;">
+      <li>✈️ Flight planning and operational efficiency improvements</li>
+      <li>👨‍✈️ Crew management and rostering optimization</li>
+      <li>📊 Fuel and emissions tracking to meet sustainability goals</li>
+      <li>🧭 Compliance with EASA, FAA, and ICAO operational standards</li>
+      <li>💡 Integration of technology for smarter, greener airline management</li>
+    </ul>
+
+    <div class="cta">
+      <a href="index.html#contact">Contact Us to Learn More →</a>
+    </div>
   </section>
 
   <footer>
