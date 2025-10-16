@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Phanstop Aviation Ltd</title>
   <meta name="description" content="Phanstop Aviation Ltd — aviation consultancy specialising in sustainability, safety, training and airline operations.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3448/3448339.png" type="image/png">
+
+  <!-- Open Graph for SEO and link previews -->
+  <meta property="og:title" content="Phanstop Aviation Ltd">
+  <meta property="og:description" content="Aviation consultancy specialising in sustainability, safety, training, and airline operations.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:type" content="website">
+
   <style>
     :root {
       --blue: #0b67b2;
@@ -68,8 +76,8 @@
       text-align: center;
       padding: 120px 20px;
       color: white;
-      background: linear-gradient(to bottom right, rgba(11,103,178,0.8), rgba(39,174,96,0.8)),
-        url(https://www.bing.com/images/search?view=detailV2&ccid=F7NSeEJp&id=D8AEEE58C902B3545158752FA24615DEDB8747B0&thid=OIP.F7NSeEJpOuHfeuuXuMGFuwHaE5&mediaurl=https%3a%2f%2fwallpapercave.com%2fwp%2fZpBc9lZ.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.17b3527842693ae1df7aeb97b8c185bb%3frik%3dsEeH294VRqIvdQ%26pid%3dImgRaw%26r%3d0&exph=2212&expw=3349&q=airplanes+picture&FORM=IRPRST&ck=BA40E18E9B9BF34131B5001E32D66398&selectedIndex=5&itb=0&qpvt=airplanes+picture);
+      background: linear-gradient(to bottom right, rgba(11,103,178,0.9), rgba(39,174,96,0.9)),
+        url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -206,6 +214,13 @@
       background: var(--green);
     }
 
+    .success-message {
+      text-align: center;
+      color: var(--green);
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -225,6 +240,13 @@
       }
       .hero {
         background-attachment: scroll;
+        padding: 80px 15px;
+      }
+      .hero h2 {
+        font-size: 30px;
+      }
+      .hero p {
+        font-size: 16px;
       }
     }
 
@@ -262,7 +284,7 @@
     <h2>Our Services</h2>
     <div class="grid">
       <div class="service">
-        <img src="https://www.bing.com/images/search?view=detailV2&ccid=F7NSeEJp&id=D8AEEE58C902B3545158752FA24615DEDB8747B0&thid=OIP.F7NSeEJpOuHfeuuXuMGFuwHaE5&mediaurl=https%3a%2f%2fwallpapercave.com%2fwp%2fZpBc9lZ.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.17b3527842693ae1df7aeb97b8c185bb%3frik%3dsEeH294VRqIvdQ%26pid%3dImgRaw%26r%3d0&exph=2212&expw=3349&q=airplanes+picture&FORM=IRPRST&ck=BA40E18E9B9BF34131B5001E32D66398&selectedIndex=5&itb=0&qpvt=airplanes+picture">
+        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=800&q=80" alt="Sustainability">
         <h3>🌱 Sustainability Solutions</h3>
         <p>Helping aviation companies adopt sustainable aviation fuels (SAF) and reduce their carbon footprint through green technology integration.</p>
         <a href="service-sustainability.html">Learn More →</a>
@@ -283,7 +305,7 @@
       </div>
 
       <div class="service">
-        <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=800&q=80" alt="Operations">
+        <img src="https://images.unsplash.com/photo-1473181488821-2d23949a045a?auto=format&fit=crop&w=800&q=80" alt="Operations">
         <h3>✈️ Airline Operations</h3>
         <p>Optimizing flight operations, crew management, and cost control strategies to ensure efficiency and sustainability.</p>
         <a href="service-operations.html">Learn More →</a>
@@ -293,12 +315,13 @@
 
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form id="contactForm">
+    <form id="contactForm" action="https://formspree.io/f/yourformid" method="POST">
       <input type="text" name="name" placeholder="Your name" required>
       <input type="email" name="email" placeholder="Your email" required>
       <input type="text" name="phone" placeholder="Your phone number (optional)">
       <textarea name="message" placeholder="Your message" required></textarea>
       <button type="submit">Send Message</button>
+      <p class="success-message" id="successMsg" style="display:none;">✅ Your message has been sent. Thank you!</p>
     </form>
     <p style="text-align:center; color:#333;">📞 07477 199779 &nbsp; | &nbsp; ✉️ <a href="mailto:Phanstop0@gmail.com">Phanstop0@gmail.com</a></p>
   </section>
@@ -308,19 +331,24 @@
   </footer>
 
   <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    // Handle form submission with Formspree
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      const name = this.name.value.trim();
-      const email = this.email.value.trim();
-      const phone = this.phone.value.trim();
-      const message = this.message.value.trim();
-      if (!name || !email || !message) {
-        alert('Please fill in all required fields before sending.');
-        return;
+      const form = e.target;
+      const successMsg = document.getElementById('successMsg');
+
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        successMsg.style.display = 'block';
+        form.reset();
+      } else {
+        alert('There was an issue submitting your message. Please try again.');
       }
-      const subject = encodeURIComponent('Website Enquiry from ' + name);
-      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\n' + message);
-      window.location.href = 'mailto:Phanstop0@gmail.com?subject=' + subject + '&body=' + body;
     });
   </script>
 </body>
